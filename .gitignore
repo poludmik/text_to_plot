@@ -1,0 +1,9 @@
+venv/
+ncNet/dataset/database/
+ncNet/dataset/database.zip
+ncNet/__pycache__/
+ncNet/preprocessing/__pycache__/
+ncNet/utilities/__pycache__/
+ncNet/model/__pycache__/
+ncNet/myenv/
+
