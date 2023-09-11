@@ -1,0 +1,4079 @@
+{
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "week"
+    },
+    "y": {
+      "field": "cylinders",
+      "type": "quantitative",
+      "aggregate": "mean"
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "id": 1,
+        "mpg": "18",
+        "cylinders": 8,
+        "edispl": 307.0,
+        "horsepower": "130",
+        "weight": 3504,
+        "accelerate": 12.0,
+        "year": 1970
+      },
+      {
+        "id": 2,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "165",
+        "weight": 3693,
+        "accelerate": 11.5,
+        "year": 1970
+      },
+      {
+        "id": 3,
+        "mpg": "18",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 3436,
+        "accelerate": 11.0,
+        "year": 1970
+      },
+      {
+        "id": 4,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "150",
+        "weight": 3433,
+        "accelerate": 12.0,
+        "year": 1970
+      },
+      {
+        "id": 5,
+        "mpg": "17",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "140",
+        "weight": 3449,
+        "accelerate": 10.5,
+        "year": 1970
+      },
+      {
+        "id": 6,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 429.0,
+        "horsepower": "198",
+        "weight": 4341,
+        "accelerate": 10.0,
+        "year": 1970
+      },
+      {
+        "id": 7,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 454.0,
+        "horsepower": "220",
+        "weight": 4354,
+        "accelerate": 9.0,
+        "year": 1970
+      },
+      {
+        "id": 8,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 440.0,
+        "horsepower": "215",
+        "weight": 4312,
+        "accelerate": 8.5,
+        "year": 1970
+      },
+      {
+        "id": 9,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 455.0,
+        "horsepower": "225",
+        "weight": 4425,
+        "accelerate": 10.0,
+        "year": 1970
+      },
+      {
+        "id": 10,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 390.0,
+        "horsepower": "190",
+        "weight": 3850,
+        "accelerate": 8.5,
+        "year": 1970
+      },
+      {
+        "id": 11,
+        "mpg": "null",
+        "cylinders": 4,
+        "edispl": 133.0,
+        "horsepower": "115",
+        "weight": 3090,
+        "accelerate": 17.5,
+        "year": 1970
+      },
+      {
+        "id": 12,
+        "mpg": "null",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "165",
+        "weight": 4142,
+        "accelerate": 11.5,
+        "year": 1970
+      },
+      {
+        "id": 13,
+        "mpg": "null",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "153",
+        "weight": 4034,
+        "accelerate": 11.0,
+        "year": 1970
+      },
+      {
+        "id": 14,
+        "mpg": "null",
+        "cylinders": 8,
+        "edispl": 383.0,
+        "horsepower": "175",
+        "weight": 4166,
+        "accelerate": 10.5,
+        "year": 1970
+      },
+      {
+        "id": 15,
+        "mpg": "null",
+        "cylinders": 8,
+        "edispl": 360.0,
+        "horsepower": "175",
+        "weight": 3850,
+        "accelerate": 11.0,
+        "year": 1970
+      },
+      {
+        "id": 16,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 383.0,
+        "horsepower": "170",
+        "weight": 3563,
+        "accelerate": 10.0,
+        "year": 1970
+      },
+      {
+        "id": 17,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 340.0,
+        "horsepower": "160",
+        "weight": 3609,
+        "accelerate": 8.0,
+        "year": 1970
+      },
+      {
+        "id": 18,
+        "mpg": "null",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "140",
+        "weight": 3353,
+        "accelerate": 8.0,
+        "year": 1970
+      },
+      {
+        "id": 19,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "150",
+        "weight": 3761,
+        "accelerate": 9.5,
+        "year": 1970
+      },
+      {
+        "id": 20,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 455.0,
+        "horsepower": "225",
+        "weight": 3086,
+        "accelerate": 10.0,
+        "year": 1970
+      },
+      {
+        "id": 21,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 113.0,
+        "horsepower": "95",
+        "weight": 2372,
+        "accelerate": 15.0,
+        "year": 1970
+      },
+      {
+        "id": 22,
+        "mpg": "22",
+        "cylinders": 6,
+        "edispl": 198.0,
+        "horsepower": "95",
+        "weight": 2833,
+        "accelerate": 15.5,
+        "year": 1970
+      },
+      {
+        "id": 23,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 199.0,
+        "horsepower": "97",
+        "weight": 2774,
+        "accelerate": 15.5,
+        "year": 1970
+      },
+      {
+        "id": 24,
+        "mpg": "21",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "85",
+        "weight": 2587,
+        "accelerate": 16.0,
+        "year": 1970
+      },
+      {
+        "id": 25,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "88",
+        "weight": 2130,
+        "accelerate": 14.5,
+        "year": 1970
+      },
+      {
+        "id": 26,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "46",
+        "weight": 1835,
+        "accelerate": 20.5,
+        "year": 1970
+      },
+      {
+        "id": 27,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 110.0,
+        "horsepower": "87",
+        "weight": 2672,
+        "accelerate": 17.5,
+        "year": 1970
+      },
+      {
+        "id": 28,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 107.0,
+        "horsepower": "90",
+        "weight": 2430,
+        "accelerate": 14.5,
+        "year": 1970
+      },
+      {
+        "id": 29,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 104.0,
+        "horsepower": "95",
+        "weight": 2375,
+        "accelerate": 17.5,
+        "year": 1970
+      },
+      {
+        "id": 30,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "113",
+        "weight": 2234,
+        "accelerate": 12.5,
+        "year": 1970
+      },
+      {
+        "id": 31,
+        "mpg": "21",
+        "cylinders": 6,
+        "edispl": 199.0,
+        "horsepower": "90",
+        "weight": 2648,
+        "accelerate": 15.0,
+        "year": 1970
+      },
+      {
+        "id": 32,
+        "mpg": "10",
+        "cylinders": 8,
+        "edispl": 360.0,
+        "horsepower": "215",
+        "weight": 4615,
+        "accelerate": 14.0,
+        "year": 1970
+      },
+      {
+        "id": 33,
+        "mpg": "10",
+        "cylinders": 8,
+        "edispl": 307.0,
+        "horsepower": "200",
+        "weight": 4376,
+        "accelerate": 15.0,
+        "year": 1970
+      },
+      {
+        "id": 34,
+        "mpg": "11",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "210",
+        "weight": 4382,
+        "accelerate": 13.5,
+        "year": 1970
+      },
+      {
+        "id": 35,
+        "mpg": "9",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "193",
+        "weight": 4732,
+        "accelerate": 18.5,
+        "year": 1970
+      },
+      {
+        "id": 36,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "88",
+        "weight": 2130,
+        "accelerate": 14.5,
+        "year": 1971
+      },
+      {
+        "id": 37,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "90",
+        "weight": 2264,
+        "accelerate": 15.5,
+        "year": 1971
+      },
+      {
+        "id": 38,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 113.0,
+        "horsepower": "95",
+        "weight": 2228,
+        "accelerate": 14.0,
+        "year": 1971
+      },
+      {
+        "id": 39,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "null",
+        "weight": 2046,
+        "accelerate": 19.0,
+        "year": 1971
+      },
+      {
+        "id": 40,
+        "mpg": "null",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "48",
+        "weight": 1978,
+        "accelerate": 20.0,
+        "year": 1971
+      },
+      {
+        "id": 41,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 2634,
+        "accelerate": 13.0,
+        "year": 1971
+      },
+      {
+        "id": 42,
+        "mpg": "16",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "105",
+        "weight": 3439,
+        "accelerate": 15.5,
+        "year": 1971
+      },
+      {
+        "id": 43,
+        "mpg": "17",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "100",
+        "weight": 3329,
+        "accelerate": 15.5,
+        "year": 1971
+      },
+      {
+        "id": 44,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "88",
+        "weight": 3302,
+        "accelerate": 15.5,
+        "year": 1971
+      },
+      {
+        "id": 45,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 3288,
+        "accelerate": 15.5,
+        "year": 1971
+      },
+      {
+        "id": 46,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "165",
+        "weight": 4209,
+        "accelerate": 12.0,
+        "year": 1971
+      },
+      {
+        "id": 47,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "175",
+        "weight": 4464,
+        "accelerate": 11.5,
+        "year": 1971
+      },
+      {
+        "id": 48,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "153",
+        "weight": 4154,
+        "accelerate": 13.5,
+        "year": 1971
+      },
+      {
+        "id": 49,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4096,
+        "accelerate": 13.0,
+        "year": 1971
+      },
+      {
+        "id": 50,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 383.0,
+        "horsepower": "180",
+        "weight": 4955,
+        "accelerate": 11.5,
+        "year": 1971
+      },
+      {
+        "id": 51,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "170",
+        "weight": 4746,
+        "accelerate": 12.0,
+        "year": 1971
+      },
+      {
+        "id": 52,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "175",
+        "weight": 5140,
+        "accelerate": 12.0,
+        "year": 1971
+      },
+      {
+        "id": 53,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 258.0,
+        "horsepower": "110",
+        "weight": 2962,
+        "accelerate": 13.5,
+        "year": 1971
+      },
+      {
+        "id": 54,
+        "mpg": "22",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "72",
+        "weight": 2408,
+        "accelerate": 19.0,
+        "year": 1971
+      },
+      {
+        "id": 55,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "100",
+        "weight": 3282,
+        "accelerate": 15.0,
+        "year": 1971
+      },
+      {
+        "id": 56,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "88",
+        "weight": 3139,
+        "accelerate": 14.5,
+        "year": 1971
+      },
+      {
+        "id": 57,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "86",
+        "weight": 2220,
+        "accelerate": 14.0,
+        "year": 1971
+      },
+      {
+        "id": 58,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 116.0,
+        "horsepower": "90",
+        "weight": 2123,
+        "accelerate": 14.0,
+        "year": 1971
+      },
+      {
+        "id": 59,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "70",
+        "weight": 2074,
+        "accelerate": 19.5,
+        "year": 1971
+      },
+      {
+        "id": 60,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 88.0,
+        "horsepower": "76",
+        "weight": 2065,
+        "accelerate": 14.5,
+        "year": 1971
+      },
+      {
+        "id": 61,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 71.0,
+        "horsepower": "65",
+        "weight": 1773,
+        "accelerate": 19.0,
+        "year": 1971
+      },
+      {
+        "id": 62,
+        "mpg": "35",
+        "cylinders": 4,
+        "edispl": 72.0,
+        "horsepower": "69",
+        "weight": 1613,
+        "accelerate": 18.0,
+        "year": 1971
+      },
+      {
+        "id": 63,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "60",
+        "weight": 1834,
+        "accelerate": 19.0,
+        "year": 1971
+      },
+      {
+        "id": 64,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "70",
+        "weight": 1955,
+        "accelerate": 20.5,
+        "year": 1971
+      },
+      {
+        "id": 65,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 113.0,
+        "horsepower": "95",
+        "weight": 2278,
+        "accelerate": 15.5,
+        "year": 1972
+      },
+      {
+        "id": 66,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 97.5,
+        "horsepower": "80",
+        "weight": 2126,
+        "accelerate": 17.0,
+        "year": 1972
+      },
+      {
+        "id": 67,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "54",
+        "weight": 2254,
+        "accelerate": 23.5,
+        "year": 1972
+      },
+      {
+        "id": 68,
+        "mpg": "20",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "90",
+        "weight": 2408,
+        "accelerate": 19.5,
+        "year": 1972
+      },
+      {
+        "id": 69,
+        "mpg": "21",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "86",
+        "weight": 2226,
+        "accelerate": 16.5,
+        "year": 1972
+      },
+      {
+        "id": 70,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "165",
+        "weight": 4274,
+        "accelerate": 12.0,
+        "year": 1972
+      },
+      {
+        "id": 71,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "175",
+        "weight": 4385,
+        "accelerate": 12.0,
+        "year": 1972
+      },
+      {
+        "id": 72,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4135,
+        "accelerate": 13.5,
+        "year": 1972
+      },
+      {
+        "id": 73,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "153",
+        "weight": 4129,
+        "accelerate": 13.0,
+        "year": 1972
+      },
+      {
+        "id": 74,
+        "mpg": "17",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "150",
+        "weight": 3672,
+        "accelerate": 11.5,
+        "year": 1972
+      },
+      {
+        "id": 75,
+        "mpg": "11",
+        "cylinders": 8,
+        "edispl": 429.0,
+        "horsepower": "208",
+        "weight": 4633,
+        "accelerate": 11.0,
+        "year": 1972
+      },
+      {
+        "id": 76,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "155",
+        "weight": 4502,
+        "accelerate": 13.5,
+        "year": 1972
+      },
+      {
+        "id": 77,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "160",
+        "weight": 4456,
+        "accelerate": 13.5,
+        "year": 1972
+      },
+      {
+        "id": 78,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "190",
+        "weight": 4422,
+        "accelerate": 12.5,
+        "year": 1972
+      },
+      {
+        "id": 79,
+        "mpg": "19",
+        "cylinders": 3,
+        "edispl": 70.0,
+        "horsepower": "97",
+        "weight": 2330,
+        "accelerate": 13.5,
+        "year": 1972
+      },
+      {
+        "id": 80,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "150",
+        "weight": 3892,
+        "accelerate": 12.5,
+        "year": 1972
+      },
+      {
+        "id": 81,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 307.0,
+        "horsepower": "130",
+        "weight": 4098,
+        "accelerate": 14.0,
+        "year": 1972
+      },
+      {
+        "id": 82,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "140",
+        "weight": 4294,
+        "accelerate": 16.0,
+        "year": 1972
+      },
+      {
+        "id": 83,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4077,
+        "accelerate": 14.0,
+        "year": 1972
+      },
+      {
+        "id": 84,
+        "mpg": "18",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "112",
+        "weight": 2933,
+        "accelerate": 14.5,
+        "year": 1972
+      },
+      {
+        "id": 85,
+        "mpg": "22",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "76",
+        "weight": 2511,
+        "accelerate": 18.0,
+        "year": 1972
+      },
+      {
+        "id": 86,
+        "mpg": "21",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "87",
+        "weight": 2979,
+        "accelerate": 19.5,
+        "year": 1972
+      },
+      {
+        "id": 87,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 96.0,
+        "horsepower": "69",
+        "weight": 2189,
+        "accelerate": 18.0,
+        "year": 1972
+      },
+      {
+        "id": 88,
+        "mpg": "22",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "86",
+        "weight": 2395,
+        "accelerate": 16.0,
+        "year": 1972
+      },
+      {
+        "id": 89,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "92",
+        "weight": 2288,
+        "accelerate": 17.0,
+        "year": 1972
+      },
+      {
+        "id": 90,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "97",
+        "weight": 2506,
+        "accelerate": 14.5,
+        "year": 1972
+      },
+      {
+        "id": 91,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "80",
+        "weight": 2164,
+        "accelerate": 15.0,
+        "year": 1972
+      },
+      {
+        "id": 92,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "88",
+        "weight": 2100,
+        "accelerate": 16.5,
+        "year": 1972
+      },
+      {
+        "id": 93,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "175",
+        "weight": 4100,
+        "accelerate": 13.0,
+        "year": 1973
+      },
+      {
+        "id": 94,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "150",
+        "weight": 3672,
+        "accelerate": 11.5,
+        "year": 1973
+      },
+      {
+        "id": 95,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "145",
+        "weight": 3988,
+        "accelerate": 13.0,
+        "year": 1973
+      },
+      {
+        "id": 96,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "137",
+        "weight": 4042,
+        "accelerate": 14.5,
+        "year": 1973
+      },
+      {
+        "id": 97,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 3777,
+        "accelerate": 12.5,
+        "year": 1973
+      },
+      {
+        "id": 98,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 429.0,
+        "horsepower": "198",
+        "weight": 4952,
+        "accelerate": 11.5,
+        "year": 1973
+      },
+      {
+        "id": 99,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "150",
+        "weight": 4464,
+        "accelerate": 12.0,
+        "year": 1973
+      },
+      {
+        "id": 100,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "158",
+        "weight": 4363,
+        "accelerate": 13.0,
+        "year": 1973
+      },
+      {
+        "id": 101,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4237,
+        "accelerate": 14.5,
+        "year": 1973
+      },
+      {
+        "id": 102,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 440.0,
+        "horsepower": "215",
+        "weight": 4735,
+        "accelerate": 11.0,
+        "year": 1973
+      },
+      {
+        "id": 103,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 455.0,
+        "horsepower": "225",
+        "weight": 4951,
+        "accelerate": 11.0,
+        "year": 1973
+      },
+      {
+        "id": 104,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 360.0,
+        "horsepower": "175",
+        "weight": 3821,
+        "accelerate": 11.0,
+        "year": 1973
+      },
+      {
+        "id": 105,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "105",
+        "weight": 3121,
+        "accelerate": 16.5,
+        "year": 1973
+      },
+      {
+        "id": 106,
+        "mpg": "16",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "100",
+        "weight": 3278,
+        "accelerate": 18.0,
+        "year": 1973
+      },
+      {
+        "id": 107,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 2945,
+        "accelerate": 16.0,
+        "year": 1973
+      },
+      {
+        "id": 108,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "88",
+        "weight": 3021,
+        "accelerate": 16.5,
+        "year": 1973
+      },
+      {
+        "id": 109,
+        "mpg": "23",
+        "cylinders": 6,
+        "edispl": 198.0,
+        "horsepower": "95",
+        "weight": 2904,
+        "accelerate": 16.0,
+        "year": 1973
+      },
+      {
+        "id": 110,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "46",
+        "weight": 1950,
+        "accelerate": 21.0,
+        "year": 1973
+      },
+      {
+        "id": 111,
+        "mpg": "11",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "150",
+        "weight": 4997,
+        "accelerate": 14.0,
+        "year": 1973
+      },
+      {
+        "id": 112,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "167",
+        "weight": 4906,
+        "accelerate": 12.5,
+        "year": 1973
+      },
+      {
+        "id": 113,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 360.0,
+        "horsepower": "170",
+        "weight": 4654,
+        "accelerate": 13.0,
+        "year": 1973
+      },
+      {
+        "id": 114,
+        "mpg": "12",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "180",
+        "weight": 4499,
+        "accelerate": 12.5,
+        "year": 1973
+      },
+      {
+        "id": 115,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 2789,
+        "accelerate": 15.0,
+        "year": 1973
+      },
+      {
+        "id": 116,
+        "mpg": "20",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "88",
+        "weight": 2279,
+        "accelerate": 19.0,
+        "year": 1973
+      },
+      {
+        "id": 117,
+        "mpg": "21",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "72",
+        "weight": 2401,
+        "accelerate": 19.5,
+        "year": 1973
+      },
+      {
+        "id": 118,
+        "mpg": "22",
+        "cylinders": 4,
+        "edispl": 108.0,
+        "horsepower": "94",
+        "weight": 2379,
+        "accelerate": 16.5,
+        "year": 1973
+      },
+      {
+        "id": 119,
+        "mpg": "18",
+        "cylinders": 3,
+        "edispl": 70.0,
+        "horsepower": "90",
+        "weight": 2124,
+        "accelerate": 13.5,
+        "year": 1973
+      },
+      {
+        "id": 120,
+        "mpg": "19",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "85",
+        "weight": 2310,
+        "accelerate": 18.5,
+        "year": 1973
+      },
+      {
+        "id": 121,
+        "mpg": "21",
+        "cylinders": 6,
+        "edispl": 155.0,
+        "horsepower": "107",
+        "weight": 2472,
+        "accelerate": 14.0,
+        "year": 1973
+      },
+      {
+        "id": 122,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "90",
+        "weight": 2265,
+        "accelerate": 15.5,
+        "year": 1973
+      },
+      {
+        "id": 123,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "145",
+        "weight": 4082,
+        "accelerate": 13.0,
+        "year": 1973
+      },
+      {
+        "id": 124,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "230",
+        "weight": 4278,
+        "accelerate": 9.5,
+        "year": 1973
+      },
+      {
+        "id": 125,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 68.0,
+        "horsepower": "49",
+        "weight": 1867,
+        "accelerate": 19.5,
+        "year": 1973
+      },
+      {
+        "id": 126,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 116.0,
+        "horsepower": "75",
+        "weight": 2158,
+        "accelerate": 15.5,
+        "year": 1973
+      },
+      {
+        "id": 127,
+        "mpg": "20",
+        "cylinders": 4,
+        "edispl": 114.0,
+        "horsepower": "91",
+        "weight": 2582,
+        "accelerate": 14.0,
+        "year": 1973
+      },
+      {
+        "id": 128,
+        "mpg": "19",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "112",
+        "weight": 2868,
+        "accelerate": 15.5,
+        "year": 1973
+      },
+      {
+        "id": 129,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 3399,
+        "accelerate": 11.0,
+        "year": 1973
+      },
+      {
+        "id": 130,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "110",
+        "weight": 2660,
+        "accelerate": 14.0,
+        "year": 1973
+      },
+      {
+        "id": 131,
+        "mpg": "20",
+        "cylinders": 6,
+        "edispl": 156.0,
+        "horsepower": "122",
+        "weight": 2807,
+        "accelerate": 13.5,
+        "year": 1973
+      },
+      {
+        "id": 132,
+        "mpg": "11",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "180",
+        "weight": 3664,
+        "accelerate": 11.0,
+        "year": 1973
+      },
+      {
+        "id": 133,
+        "mpg": "20",
+        "cylinders": 6,
+        "edispl": 198.0,
+        "horsepower": "95",
+        "weight": 3102,
+        "accelerate": 16.5,
+        "year": 1974
+      },
+      {
+        "id": 134,
+        "mpg": "21",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "null",
+        "weight": 2875,
+        "accelerate": 17.0,
+        "year": 1974
+      },
+      {
+        "id": 135,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 2901,
+        "accelerate": 16.0,
+        "year": 1974
+      },
+      {
+        "id": 136,
+        "mpg": "15",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "100",
+        "weight": 3336,
+        "accelerate": 17.0,
+        "year": 1974
+      },
+      {
+        "id": 137,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "67",
+        "weight": 1950,
+        "accelerate": 19.0,
+        "year": 1974
+      },
+      {
+        "id": 138,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "80",
+        "weight": 2451,
+        "accelerate": 16.5,
+        "year": 1974
+      },
+      {
+        "id": 139,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 71.0,
+        "horsepower": "65",
+        "weight": 1836,
+        "accelerate": 21.0,
+        "year": 1974
+      },
+      {
+        "id": 140,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "75",
+        "weight": 2542,
+        "accelerate": 17.0,
+        "year": 1974
+      },
+      {
+        "id": 141,
+        "mpg": "16",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "100",
+        "weight": 3781,
+        "accelerate": 17.0,
+        "year": 1974
+      },
+      {
+        "id": 142,
+        "mpg": "16",
+        "cylinders": 6,
+        "edispl": 258.0,
+        "horsepower": "110",
+        "weight": 3632,
+        "accelerate": 18.0,
+        "year": 1974
+      },
+      {
+        "id": 143,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "105",
+        "weight": 3613,
+        "accelerate": 16.5,
+        "year": 1974
+      },
+      {
+        "id": 144,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "140",
+        "weight": 4141,
+        "accelerate": 14.0,
+        "year": 1974
+      },
+      {
+        "id": 145,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "150",
+        "weight": 4699,
+        "accelerate": 14.5,
+        "year": 1974
+      },
+      {
+        "id": 146,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4457,
+        "accelerate": 13.5,
+        "year": 1974
+      },
+      {
+        "id": 147,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "140",
+        "weight": 4638,
+        "accelerate": 16.0,
+        "year": 1974
+      },
+      {
+        "id": 148,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "150",
+        "weight": 4257,
+        "accelerate": 15.5,
+        "year": 1974
+      },
+      {
+        "id": 149,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "83",
+        "weight": 2219,
+        "accelerate": 16.5,
+        "year": 1974
+      },
+      {
+        "id": 150,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "67",
+        "weight": 1963,
+        "accelerate": 15.5,
+        "year": 1974
+      },
+      {
+        "id": 151,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "78",
+        "weight": 2300,
+        "accelerate": 14.5,
+        "year": 1974
+      },
+      {
+        "id": 152,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 76.0,
+        "horsepower": "52",
+        "weight": 1649,
+        "accelerate": 16.5,
+        "year": 1974
+      },
+      {
+        "id": 153,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 83.0,
+        "horsepower": "61",
+        "weight": 2003,
+        "accelerate": 19.0,
+        "year": 1974
+      },
+      {
+        "id": 154,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "75",
+        "weight": 2125,
+        "accelerate": 14.5,
+        "year": 1974
+      },
+      {
+        "id": 155,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "75",
+        "weight": 2108,
+        "accelerate": 15.5,
+        "year": 1974
+      },
+      {
+        "id": 156,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 116.0,
+        "horsepower": "75",
+        "weight": 2246,
+        "accelerate": 14.0,
+        "year": 1974
+      },
+      {
+        "id": 157,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "97",
+        "weight": 2489,
+        "accelerate": 15.0,
+        "year": 1974
+      },
+      {
+        "id": 158,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 108.0,
+        "horsepower": "93",
+        "weight": 2391,
+        "accelerate": 15.5,
+        "year": 1974
+      },
+      {
+        "id": 159,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "67",
+        "weight": 2000,
+        "accelerate": 16.0,
+        "year": 1974
+      },
+      {
+        "id": 160,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "95",
+        "weight": 3264,
+        "accelerate": 16.0,
+        "year": 1975
+      },
+      {
+        "id": 161,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "105",
+        "weight": 3459,
+        "accelerate": 16.0,
+        "year": 1975
+      },
+      {
+        "id": 162,
+        "mpg": "15",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "72",
+        "weight": 3432,
+        "accelerate": 21.0,
+        "year": 1975
+      },
+      {
+        "id": 163,
+        "mpg": "15",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "72",
+        "weight": 3158,
+        "accelerate": 19.5,
+        "year": 1975
+      },
+      {
+        "id": 164,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "170",
+        "weight": 4668,
+        "accelerate": 11.5,
+        "year": 1975
+      },
+      {
+        "id": 165,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "145",
+        "weight": 4440,
+        "accelerate": 14.0,
+        "year": 1975
+      },
+      {
+        "id": 166,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4498,
+        "accelerate": 14.5,
+        "year": 1975
+      },
+      {
+        "id": 167,
+        "mpg": "14",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "148",
+        "weight": 4657,
+        "accelerate": 13.5,
+        "year": 1975
+      },
+      {
+        "id": 168,
+        "mpg": "17",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "110",
+        "weight": 3907,
+        "accelerate": 21.0,
+        "year": 1975
+      },
+      {
+        "id": 169,
+        "mpg": "16",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "105",
+        "weight": 3897,
+        "accelerate": 18.5,
+        "year": 1975
+      },
+      {
+        "id": 170,
+        "mpg": "15",
+        "cylinders": 6,
+        "edispl": 258.0,
+        "horsepower": "110",
+        "weight": 3730,
+        "accelerate": 19.0,
+        "year": 1975
+      },
+      {
+        "id": 171,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "95",
+        "weight": 3785,
+        "accelerate": 19.0,
+        "year": 1975
+      },
+      {
+        "id": 172,
+        "mpg": "21",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "110",
+        "weight": 3039,
+        "accelerate": 15.0,
+        "year": 1975
+      },
+      {
+        "id": 173,
+        "mpg": "20",
+        "cylinders": 8,
+        "edispl": 262.0,
+        "horsepower": "110",
+        "weight": 3221,
+        "accelerate": 13.5,
+        "year": 1975
+      },
+      {
+        "id": 174,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "129",
+        "weight": 3169,
+        "accelerate": 12.0,
+        "year": 1975
+      },
+      {
+        "id": 175,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "75",
+        "weight": 2171,
+        "accelerate": 16.0,
+        "year": 1975
+      },
+      {
+        "id": 176,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "83",
+        "weight": 2639,
+        "accelerate": 17.0,
+        "year": 1975
+      },
+      {
+        "id": 177,
+        "mpg": "20",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "100",
+        "weight": 2914,
+        "accelerate": 16.0,
+        "year": 1975
+      },
+      {
+        "id": 178,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "78",
+        "weight": 2592,
+        "accelerate": 18.5,
+        "year": 1975
+      },
+      {
+        "id": 179,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 134.0,
+        "horsepower": "96",
+        "weight": 2702,
+        "accelerate": 13.5,
+        "year": 1975
+      },
+      {
+        "id": 180,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "71",
+        "weight": 2223,
+        "accelerate": 16.5,
+        "year": 1975
+      },
+      {
+        "id": 181,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "97",
+        "weight": 2545,
+        "accelerate": 17.0,
+        "year": 1975
+      },
+      {
+        "id": 182,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 171.0,
+        "horsepower": "97",
+        "weight": 2984,
+        "accelerate": 14.5,
+        "year": 1975
+      },
+      {
+        "id": 183,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "70",
+        "weight": 1937,
+        "accelerate": 14.0,
+        "year": 1975
+      },
+      {
+        "id": 184,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "90",
+        "weight": 3211,
+        "accelerate": 17.0,
+        "year": 1975
+      },
+      {
+        "id": 185,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 115.0,
+        "horsepower": "95",
+        "weight": 2694,
+        "accelerate": 15.0,
+        "year": 1975
+      },
+      {
+        "id": 186,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "88",
+        "weight": 2957,
+        "accelerate": 17.0,
+        "year": 1975
+      },
+      {
+        "id": 187,
+        "mpg": "22",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "98",
+        "weight": 2945,
+        "accelerate": 14.5,
+        "year": 1975
+      },
+      {
+        "id": 188,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "115",
+        "weight": 2671,
+        "accelerate": 13.5,
+        "year": 1975
+      },
+      {
+        "id": 189,
+        "mpg": "33",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "53",
+        "weight": 1795,
+        "accelerate": 17.5,
+        "year": 1975
+      },
+      {
+        "id": 190,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 107.0,
+        "horsepower": "86",
+        "weight": 2464,
+        "accelerate": 15.5,
+        "year": 1976
+      },
+      {
+        "id": 191,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 116.0,
+        "horsepower": "81",
+        "weight": 2220,
+        "accelerate": 16.9,
+        "year": 1976
+      },
+      {
+        "id": 192,
+        "mpg": "25",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "92",
+        "weight": 2572,
+        "accelerate": 14.9,
+        "year": 1976
+      },
+      {
+        "id": 193,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "79",
+        "weight": 2255,
+        "accelerate": 17.7,
+        "year": 1976
+      },
+      {
+        "id": 194,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 101.0,
+        "horsepower": "83",
+        "weight": 2202,
+        "accelerate": 15.3,
+        "year": 1976
+      },
+      {
+        "id": 195,
+        "mpg": "17.5",
+        "cylinders": 8,
+        "edispl": 305.0,
+        "horsepower": "140",
+        "weight": 4215,
+        "accelerate": 13.0,
+        "year": 1976
+      },
+      {
+        "id": 196,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 4190,
+        "accelerate": 13.0,
+        "year": 1976
+      },
+      {
+        "id": 197,
+        "mpg": "15.5",
+        "cylinders": 8,
+        "edispl": 304.0,
+        "horsepower": "120",
+        "weight": 3962,
+        "accelerate": 13.9,
+        "year": 1976
+      },
+      {
+        "id": 198,
+        "mpg": "14.5",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "152",
+        "weight": 4215,
+        "accelerate": 12.8,
+        "year": 1976
+      },
+      {
+        "id": 199,
+        "mpg": "22",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "100",
+        "weight": 3233,
+        "accelerate": 15.4,
+        "year": 1976
+      },
+      {
+        "id": 200,
+        "mpg": "22",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "105",
+        "weight": 3353,
+        "accelerate": 14.5,
+        "year": 1976
+      },
+      {
+        "id": 201,
+        "mpg": "24",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "81",
+        "weight": 3012,
+        "accelerate": 17.6,
+        "year": 1976
+      },
+      {
+        "id": 202,
+        "mpg": "22.5",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "90",
+        "weight": 3085,
+        "accelerate": 17.6,
+        "year": 1976
+      },
+      {
+        "id": 203,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "52",
+        "weight": 2035,
+        "accelerate": 22.2,
+        "year": 1976
+      },
+      {
+        "id": 204,
+        "mpg": "24.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "60",
+        "weight": 2164,
+        "accelerate": 22.1,
+        "year": 1976
+      },
+      {
+        "id": 205,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "70",
+        "weight": 1937,
+        "accelerate": 14.2,
+        "year": 1976
+      },
+      {
+        "id": 206,
+        "mpg": "33",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "53",
+        "weight": 1795,
+        "accelerate": 17.4,
+        "year": 1976
+      },
+      {
+        "id": 207,
+        "mpg": "20",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "100",
+        "weight": 3651,
+        "accelerate": 17.7,
+        "year": 1976
+      },
+      {
+        "id": 208,
+        "mpg": "18",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "78",
+        "weight": 3574,
+        "accelerate": 21.0,
+        "year": 1976
+      },
+      {
+        "id": 209,
+        "mpg": "18.5",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "110",
+        "weight": 3645,
+        "accelerate": 16.2,
+        "year": 1976
+      },
+      {
+        "id": 210,
+        "mpg": "17.5",
+        "cylinders": 6,
+        "edispl": 258.0,
+        "horsepower": "95",
+        "weight": 3193,
+        "accelerate": 17.8,
+        "year": 1976
+      },
+      {
+        "id": 211,
+        "mpg": "29.5",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "71",
+        "weight": 1825,
+        "accelerate": 12.2,
+        "year": 1976
+      },
+      {
+        "id": 212,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "70",
+        "weight": 1990,
+        "accelerate": 17.0,
+        "year": 1976
+      },
+      {
+        "id": 213,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "75",
+        "weight": 2155,
+        "accelerate": 16.4,
+        "year": 1976
+      },
+      {
+        "id": 214,
+        "mpg": "26.5",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "72",
+        "weight": 2565,
+        "accelerate": 13.6,
+        "year": 1976
+      },
+      {
+        "id": 215,
+        "mpg": "20",
+        "cylinders": 4,
+        "edispl": 130.0,
+        "horsepower": "102",
+        "weight": 3150,
+        "accelerate": 15.7,
+        "year": 1976
+      },
+      {
+        "id": 216,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 3940,
+        "accelerate": 13.2,
+        "year": 1976
+      },
+      {
+        "id": 217,
+        "mpg": "19",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "88",
+        "weight": 3270,
+        "accelerate": 21.9,
+        "year": 1976
+      },
+      {
+        "id": 218,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 156.0,
+        "horsepower": "108",
+        "weight": 2930,
+        "accelerate": 15.5,
+        "year": 1976
+      },
+      {
+        "id": 219,
+        "mpg": "16.5",
+        "cylinders": 6,
+        "edispl": 168.0,
+        "horsepower": "120",
+        "weight": 3820,
+        "accelerate": 16.7,
+        "year": 1976
+      },
+      {
+        "id": 220,
+        "mpg": "16.5",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "180",
+        "weight": 4380,
+        "accelerate": 12.1,
+        "year": 1976
+      },
+      {
+        "id": 221,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "145",
+        "weight": 4055,
+        "accelerate": 12.0,
+        "year": 1976
+      },
+      {
+        "id": 222,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "130",
+        "weight": 3870,
+        "accelerate": 15.0,
+        "year": 1976
+      },
+      {
+        "id": 223,
+        "mpg": "13",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "150",
+        "weight": 3755,
+        "accelerate": 14.0,
+        "year": 1976
+      },
+      {
+        "id": 224,
+        "mpg": "31.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "68",
+        "weight": 2045,
+        "accelerate": 18.5,
+        "year": 1977
+      },
+      {
+        "id": 225,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 111.0,
+        "horsepower": "80",
+        "weight": 2155,
+        "accelerate": 14.8,
+        "year": 1977
+      },
+      {
+        "id": 226,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "58",
+        "weight": 1825,
+        "accelerate": 18.6,
+        "year": 1977
+      },
+      {
+        "id": 227,
+        "mpg": "25.5",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "96",
+        "weight": 2300,
+        "accelerate": 15.5,
+        "year": 1977
+      },
+      {
+        "id": 228,
+        "mpg": "33.5",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "70",
+        "weight": 1945,
+        "accelerate": 16.8,
+        "year": 1977
+      },
+      {
+        "id": 229,
+        "mpg": "17.5",
+        "cylinders": 8,
+        "edispl": 305.0,
+        "horsepower": "145",
+        "weight": 3880,
+        "accelerate": 12.5,
+        "year": 1977
+      },
+      {
+        "id": 230,
+        "mpg": "17",
+        "cylinders": 8,
+        "edispl": 260.0,
+        "horsepower": "110",
+        "weight": 4060,
+        "accelerate": 19.0,
+        "year": 1977
+      },
+      {
+        "id": 231,
+        "mpg": "15.5",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "145",
+        "weight": 4140,
+        "accelerate": 13.7,
+        "year": 1977
+      },
+      {
+        "id": 232,
+        "mpg": "15",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "130",
+        "weight": 4295,
+        "accelerate": 14.9,
+        "year": 1977
+      },
+      {
+        "id": 233,
+        "mpg": "17.5",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "110",
+        "weight": 3520,
+        "accelerate": 16.4,
+        "year": 1977
+      },
+      {
+        "id": 234,
+        "mpg": "20.5",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "105",
+        "weight": 3425,
+        "accelerate": 16.9,
+        "year": 1977
+      },
+      {
+        "id": 235,
+        "mpg": "19",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "100",
+        "weight": 3630,
+        "accelerate": 17.7,
+        "year": 1977
+      },
+      {
+        "id": 236,
+        "mpg": "18.5",
+        "cylinders": 6,
+        "edispl": 250.0,
+        "horsepower": "98",
+        "weight": 3525,
+        "accelerate": 19.0,
+        "year": 1977
+      },
+      {
+        "id": 237,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "180",
+        "weight": 4220,
+        "accelerate": 11.1,
+        "year": 1977
+      },
+      {
+        "id": 238,
+        "mpg": "15.5",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "170",
+        "weight": 4165,
+        "accelerate": 11.4,
+        "year": 1977
+      },
+      {
+        "id": 239,
+        "mpg": "15.5",
+        "cylinders": 8,
+        "edispl": 400.0,
+        "horsepower": "190",
+        "weight": 4325,
+        "accelerate": 12.2,
+        "year": 1977
+      },
+      {
+        "id": 240,
+        "mpg": "16",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "149",
+        "weight": 4335,
+        "accelerate": 14.5,
+        "year": 1977
+      },
+      {
+        "id": 241,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "78",
+        "weight": 1940,
+        "accelerate": 14.5,
+        "year": 1977
+      },
+      {
+        "id": 242,
+        "mpg": "24.5",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "88",
+        "weight": 2740,
+        "accelerate": 16.0,
+        "year": 1977
+      },
+      {
+        "id": 243,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "75",
+        "weight": 2265,
+        "accelerate": 18.2,
+        "year": 1977
+      },
+      {
+        "id": 244,
+        "mpg": "25.5",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "89",
+        "weight": 2755,
+        "accelerate": 15.8,
+        "year": 1977
+      },
+      {
+        "id": 245,
+        "mpg": "30.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "63",
+        "weight": 2051,
+        "accelerate": 17.0,
+        "year": 1977
+      },
+      {
+        "id": 246,
+        "mpg": "33.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "83",
+        "weight": 2075,
+        "accelerate": 15.9,
+        "year": 1977
+      },
+      {
+        "id": 247,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "67",
+        "weight": 1985,
+        "accelerate": 16.4,
+        "year": 1977
+      },
+      {
+        "id": 248,
+        "mpg": "30.5",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "78",
+        "weight": 2190,
+        "accelerate": 14.1,
+        "year": 1977
+      },
+      {
+        "id": 249,
+        "mpg": "22",
+        "cylinders": 6,
+        "edispl": 146.0,
+        "horsepower": "97",
+        "weight": 2815,
+        "accelerate": 14.5,
+        "year": 1977
+      },
+      {
+        "id": 250,
+        "mpg": "21.5",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "110",
+        "weight": 2600,
+        "accelerate": 12.8,
+        "year": 1977
+      },
+      {
+        "id": 251,
+        "mpg": "21.5",
+        "cylinders": 3,
+        "edispl": 80.0,
+        "horsepower": "110",
+        "weight": 2720,
+        "accelerate": 13.5,
+        "year": 1977
+      },
+      {
+        "id": 252,
+        "mpg": "43.1",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "48",
+        "weight": 1985,
+        "accelerate": 21.5,
+        "year": 1978
+      },
+      {
+        "id": 253,
+        "mpg": "36.1",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "66",
+        "weight": 1800,
+        "accelerate": 14.4,
+        "year": 1978
+      },
+      {
+        "id": 254,
+        "mpg": "32.8",
+        "cylinders": 4,
+        "edispl": 78.0,
+        "horsepower": "52",
+        "weight": 1985,
+        "accelerate": 19.4,
+        "year": 1978
+      },
+      {
+        "id": 255,
+        "mpg": "39.4",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "70",
+        "weight": 2070,
+        "accelerate": 18.6,
+        "year": 1978
+      },
+      {
+        "id": 256,
+        "mpg": "36.1",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "60",
+        "weight": 1800,
+        "accelerate": 16.4,
+        "year": 1978
+      },
+      {
+        "id": 257,
+        "mpg": "19.9",
+        "cylinders": 8,
+        "edispl": 260.0,
+        "horsepower": "110",
+        "weight": 3365,
+        "accelerate": 15.5,
+        "year": 1978
+      },
+      {
+        "id": 258,
+        "mpg": "19.4",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "140",
+        "weight": 3735,
+        "accelerate": 13.2,
+        "year": 1978
+      },
+      {
+        "id": 259,
+        "mpg": "20.2",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "139",
+        "weight": 3570,
+        "accelerate": 12.8,
+        "year": 1978
+      },
+      {
+        "id": 260,
+        "mpg": "19.2",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "105",
+        "weight": 3535,
+        "accelerate": 19.2,
+        "year": 1978
+      },
+      {
+        "id": 261,
+        "mpg": "20.5",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "95",
+        "weight": 3155,
+        "accelerate": 18.2,
+        "year": 1978
+      },
+      {
+        "id": 262,
+        "mpg": "20.2",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "85",
+        "weight": 2965,
+        "accelerate": 15.8,
+        "year": 1978
+      },
+      {
+        "id": 263,
+        "mpg": "25.1",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "88",
+        "weight": 2720,
+        "accelerate": 15.4,
+        "year": 1978
+      },
+      {
+        "id": 264,
+        "mpg": "20.5",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "100",
+        "weight": 3430,
+        "accelerate": 17.2,
+        "year": 1978
+      },
+      {
+        "id": 265,
+        "mpg": "19.4",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "90",
+        "weight": 3210,
+        "accelerate": 17.2,
+        "year": 1978
+      },
+      {
+        "id": 266,
+        "mpg": "20.6",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "105",
+        "weight": 3380,
+        "accelerate": 15.8,
+        "year": 1978
+      },
+      {
+        "id": 267,
+        "mpg": "20.8",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "85",
+        "weight": 3070,
+        "accelerate": 16.7,
+        "year": 1978
+      },
+      {
+        "id": 268,
+        "mpg": "18.6",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "110",
+        "weight": 3620,
+        "accelerate": 18.7,
+        "year": 1978
+      },
+      {
+        "id": 269,
+        "mpg": "18.1",
+        "cylinders": 6,
+        "edispl": 258.0,
+        "horsepower": "120",
+        "weight": 3410,
+        "accelerate": 15.1,
+        "year": 1978
+      },
+      {
+        "id": 270,
+        "mpg": "19.2",
+        "cylinders": 8,
+        "edispl": 305.0,
+        "horsepower": "145",
+        "weight": 3425,
+        "accelerate": 13.2,
+        "year": 1978
+      },
+      {
+        "id": 271,
+        "mpg": "17.7",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "165",
+        "weight": 3445,
+        "accelerate": 13.4,
+        "year": 1978
+      },
+      {
+        "id": 272,
+        "mpg": "18.1",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "139",
+        "weight": 3205,
+        "accelerate": 11.2,
+        "year": 1978
+      },
+      {
+        "id": 273,
+        "mpg": "17.5",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "140",
+        "weight": 4080,
+        "accelerate": 13.7,
+        "year": 1978
+      },
+      {
+        "id": 274,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "68",
+        "weight": 2155,
+        "accelerate": 16.5,
+        "year": 1978
+      },
+      {
+        "id": 275,
+        "mpg": "27.5",
+        "cylinders": 4,
+        "edispl": 134.0,
+        "horsepower": "95",
+        "weight": 2560,
+        "accelerate": 14.2,
+        "year": 1978
+      },
+      {
+        "id": 276,
+        "mpg": "27.2",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "97",
+        "weight": 2300,
+        "accelerate": 14.7,
+        "year": 1978
+      },
+      {
+        "id": 277,
+        "mpg": "30.9",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "75",
+        "weight": 2230,
+        "accelerate": 14.5,
+        "year": 1978
+      },
+      {
+        "id": 278,
+        "mpg": "21.1",
+        "cylinders": 4,
+        "edispl": 134.0,
+        "horsepower": "95",
+        "weight": 2515,
+        "accelerate": 14.8,
+        "year": 1978
+      },
+      {
+        "id": 279,
+        "mpg": "23.2",
+        "cylinders": 4,
+        "edispl": 156.0,
+        "horsepower": "105",
+        "weight": 2745,
+        "accelerate": 16.7,
+        "year": 1978
+      },
+      {
+        "id": 280,
+        "mpg": "23.8",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "85",
+        "weight": 2855,
+        "accelerate": 17.6,
+        "year": 1978
+      },
+      {
+        "id": 281,
+        "mpg": "23.9",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "97",
+        "weight": 2405,
+        "accelerate": 14.9,
+        "year": 1978
+      },
+      {
+        "id": 282,
+        "mpg": "20.3",
+        "cylinders": 5,
+        "edispl": 131.0,
+        "horsepower": "103",
+        "weight": 2830,
+        "accelerate": 15.9,
+        "year": 1978
+      },
+      {
+        "id": 283,
+        "mpg": "17",
+        "cylinders": 6,
+        "edispl": 163.0,
+        "horsepower": "125",
+        "weight": 3140,
+        "accelerate": 13.6,
+        "year": 1978
+      },
+      {
+        "id": 284,
+        "mpg": "21.6",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "115",
+        "weight": 2795,
+        "accelerate": 15.7,
+        "year": 1978
+      },
+      {
+        "id": 285,
+        "mpg": "16.2",
+        "cylinders": 6,
+        "edispl": 163.0,
+        "horsepower": "133",
+        "weight": 3410,
+        "accelerate": 15.8,
+        "year": 1978
+      },
+      {
+        "id": 286,
+        "mpg": "31.5",
+        "cylinders": 4,
+        "edispl": 89.0,
+        "horsepower": "71",
+        "weight": 1990,
+        "accelerate": 14.9,
+        "year": 1978
+      },
+      {
+        "id": 287,
+        "mpg": "29.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "68",
+        "weight": 2135,
+        "accelerate": 16.6,
+        "year": 1978
+      },
+      {
+        "id": 288,
+        "mpg": "21.5",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "115",
+        "weight": 3245,
+        "accelerate": 15.4,
+        "year": 1979
+      },
+      {
+        "id": 289,
+        "mpg": "19.8",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "85",
+        "weight": 2990,
+        "accelerate": 18.2,
+        "year": 1979
+      },
+      {
+        "id": 290,
+        "mpg": "22.3",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "88",
+        "weight": 2890,
+        "accelerate": 17.3,
+        "year": 1979
+      },
+      {
+        "id": 291,
+        "mpg": "20.2",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "90",
+        "weight": 3265,
+        "accelerate": 18.2,
+        "year": 1979
+      },
+      {
+        "id": 292,
+        "mpg": "20.6",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "110",
+        "weight": 3360,
+        "accelerate": 16.6,
+        "year": 1979
+      },
+      {
+        "id": 293,
+        "mpg": "17",
+        "cylinders": 8,
+        "edispl": 305.0,
+        "horsepower": "130",
+        "weight": 3840,
+        "accelerate": 15.4,
+        "year": 1979
+      },
+      {
+        "id": 294,
+        "mpg": "17.6",
+        "cylinders": 8,
+        "edispl": 302.0,
+        "horsepower": "129",
+        "weight": 3725,
+        "accelerate": 13.4,
+        "year": 1979
+      },
+      {
+        "id": 295,
+        "mpg": "16.5",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "138",
+        "weight": 3955,
+        "accelerate": 13.2,
+        "year": 1979
+      },
+      {
+        "id": 296,
+        "mpg": "18.2",
+        "cylinders": 8,
+        "edispl": 318.0,
+        "horsepower": "135",
+        "weight": 3830,
+        "accelerate": 15.2,
+        "year": 1979
+      },
+      {
+        "id": 297,
+        "mpg": "16.9",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "155",
+        "weight": 4360,
+        "accelerate": 14.9,
+        "year": 1979
+      },
+      {
+        "id": 298,
+        "mpg": "15.5",
+        "cylinders": 8,
+        "edispl": 351.0,
+        "horsepower": "142",
+        "weight": 4054,
+        "accelerate": 14.3,
+        "year": 1979
+      },
+      {
+        "id": 299,
+        "mpg": "19.2",
+        "cylinders": 8,
+        "edispl": 267.0,
+        "horsepower": "125",
+        "weight": 3605,
+        "accelerate": 15.0,
+        "year": 1979
+      },
+      {
+        "id": 300,
+        "mpg": "18.5",
+        "cylinders": 8,
+        "edispl": 360.0,
+        "horsepower": "150",
+        "weight": 3940,
+        "accelerate": 13.0,
+        "year": 1979
+      },
+      {
+        "id": 301,
+        "mpg": "31.9",
+        "cylinders": 4,
+        "edispl": 89.0,
+        "horsepower": "71",
+        "weight": 1925,
+        "accelerate": 14.0,
+        "year": 1979
+      },
+      {
+        "id": 302,
+        "mpg": "34.1",
+        "cylinders": 4,
+        "edispl": 86.0,
+        "horsepower": "65",
+        "weight": 1975,
+        "accelerate": 15.2,
+        "year": 1979
+      },
+      {
+        "id": 303,
+        "mpg": "35.7",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "80",
+        "weight": 1915,
+        "accelerate": 14.4,
+        "year": 1979
+      },
+      {
+        "id": 304,
+        "mpg": "27.4",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "80",
+        "weight": 2670,
+        "accelerate": 15.0,
+        "year": 1979
+      },
+      {
+        "id": 305,
+        "mpg": "25.4",
+        "cylinders": 5,
+        "edispl": 183.0,
+        "horsepower": "77",
+        "weight": 3530,
+        "accelerate": 20.1,
+        "year": 1979
+      },
+      {
+        "id": 306,
+        "mpg": "23",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "125",
+        "weight": 3900,
+        "accelerate": 17.4,
+        "year": 1979
+      },
+      {
+        "id": 307,
+        "mpg": "27.2",
+        "cylinders": 4,
+        "edispl": 141.0,
+        "horsepower": "71",
+        "weight": 3190,
+        "accelerate": 24.8,
+        "year": 1979
+      },
+      {
+        "id": 308,
+        "mpg": "23.9",
+        "cylinders": 8,
+        "edispl": 260.0,
+        "horsepower": "90",
+        "weight": 3420,
+        "accelerate": 22.2,
+        "year": 1979
+      },
+      {
+        "id": 309,
+        "mpg": "34.2",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "70",
+        "weight": 2200,
+        "accelerate": 13.2,
+        "year": 1979
+      },
+      {
+        "id": 310,
+        "mpg": "34.5",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "70",
+        "weight": 2150,
+        "accelerate": 14.9,
+        "year": 1979
+      },
+      {
+        "id": 311,
+        "mpg": "31.8",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "65",
+        "weight": 2020,
+        "accelerate": 19.2,
+        "year": 1979
+      },
+      {
+        "id": 312,
+        "mpg": "37.3",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "69",
+        "weight": 2130,
+        "accelerate": 14.7,
+        "year": 1979
+      },
+      {
+        "id": 313,
+        "mpg": "28.4",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 2670,
+        "accelerate": 16.0,
+        "year": 1979
+      },
+      {
+        "id": 314,
+        "mpg": "28.8",
+        "cylinders": 6,
+        "edispl": 173.0,
+        "horsepower": "115",
+        "weight": 2595,
+        "accelerate": 11.3,
+        "year": 1979
+      },
+      {
+        "id": 315,
+        "mpg": "26.8",
+        "cylinders": 6,
+        "edispl": 173.0,
+        "horsepower": "115",
+        "weight": 2700,
+        "accelerate": 12.9,
+        "year": 1979
+      },
+      {
+        "id": 316,
+        "mpg": "33.5",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 2556,
+        "accelerate": 13.2,
+        "year": 1979
+      },
+      {
+        "id": 317,
+        "mpg": "41.5",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "76",
+        "weight": 2144,
+        "accelerate": 14.7,
+        "year": 1980
+      },
+      {
+        "id": 318,
+        "mpg": "38.1",
+        "cylinders": 4,
+        "edispl": 89.0,
+        "horsepower": "60",
+        "weight": 1968,
+        "accelerate": 18.8,
+        "year": 1980
+      },
+      {
+        "id": 319,
+        "mpg": "32.1",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "70",
+        "weight": 2120,
+        "accelerate": 15.5,
+        "year": 1980
+      },
+      {
+        "id": 320,
+        "mpg": "37.2",
+        "cylinders": 4,
+        "edispl": 86.0,
+        "horsepower": "65",
+        "weight": 2019,
+        "accelerate": 16.4,
+        "year": 1980
+      },
+      {
+        "id": 321,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 2678,
+        "accelerate": 16.5,
+        "year": 1980
+      },
+      {
+        "id": 322,
+        "mpg": "26.4",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "88",
+        "weight": 2870,
+        "accelerate": 18.1,
+        "year": 1980
+      },
+      {
+        "id": 323,
+        "mpg": "24.3",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 3003,
+        "accelerate": 20.1,
+        "year": 1980
+      },
+      {
+        "id": 324,
+        "mpg": "19.1",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "90",
+        "weight": 3381,
+        "accelerate": 18.7,
+        "year": 1980
+      },
+      {
+        "id": 325,
+        "mpg": "34.3",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "78",
+        "weight": 2188,
+        "accelerate": 15.8,
+        "year": 1980
+      },
+      {
+        "id": 326,
+        "mpg": "29.8",
+        "cylinders": 4,
+        "edispl": 134.0,
+        "horsepower": "90",
+        "weight": 2711,
+        "accelerate": 15.5,
+        "year": 1980
+      },
+      {
+        "id": 327,
+        "mpg": "31.3",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "75",
+        "weight": 2542,
+        "accelerate": 17.5,
+        "year": 1980
+      },
+      {
+        "id": 328,
+        "mpg": "37",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "92",
+        "weight": 2434,
+        "accelerate": 15.0,
+        "year": 1980
+      },
+      {
+        "id": 329,
+        "mpg": "32.2",
+        "cylinders": 4,
+        "edispl": 108.0,
+        "horsepower": "75",
+        "weight": 2265,
+        "accelerate": 15.2,
+        "year": 1980
+      },
+      {
+        "id": 330,
+        "mpg": "46.6",
+        "cylinders": 4,
+        "edispl": 86.0,
+        "horsepower": "65",
+        "weight": 2110,
+        "accelerate": 17.9,
+        "year": 1980
+      },
+      {
+        "id": 331,
+        "mpg": "27.9",
+        "cylinders": 4,
+        "edispl": 156.0,
+        "horsepower": "105",
+        "weight": 2800,
+        "accelerate": 14.4,
+        "year": 1980
+      },
+      {
+        "id": 332,
+        "mpg": "40.8",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "65",
+        "weight": 2110,
+        "accelerate": 19.2,
+        "year": 1980
+      },
+      {
+        "id": 333,
+        "mpg": "44.3",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "48",
+        "weight": 2085,
+        "accelerate": 21.7,
+        "year": 1980
+      },
+      {
+        "id": 334,
+        "mpg": "43.4",
+        "cylinders": 4,
+        "edispl": 90.0,
+        "horsepower": "48",
+        "weight": 2335,
+        "accelerate": 23.7,
+        "year": 1980
+      },
+      {
+        "id": 335,
+        "mpg": "36.4",
+        "cylinders": 5,
+        "edispl": 121.0,
+        "horsepower": "67",
+        "weight": 2950,
+        "accelerate": 19.9,
+        "year": 1980
+      },
+      {
+        "id": 336,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 146.0,
+        "horsepower": "67",
+        "weight": 3250,
+        "accelerate": 21.8,
+        "year": 1980
+      },
+      {
+        "id": 337,
+        "mpg": "44.6",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "67",
+        "weight": 1850,
+        "accelerate": 13.8,
+        "year": 1980
+      },
+      {
+        "id": 338,
+        "mpg": "40.9",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "null",
+        "weight": 1835,
+        "accelerate": 17.3,
+        "year": 1980
+      },
+      {
+        "id": 339,
+        "mpg": "33.8",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "67",
+        "weight": 2145,
+        "accelerate": 18.0,
+        "year": 1980
+      },
+      {
+        "id": 340,
+        "mpg": "29.8",
+        "cylinders": 4,
+        "edispl": 89.0,
+        "horsepower": "62",
+        "weight": 1845,
+        "accelerate": 15.3,
+        "year": 1980
+      },
+      {
+        "id": 341,
+        "mpg": "32.7",
+        "cylinders": 6,
+        "edispl": 168.0,
+        "horsepower": "132",
+        "weight": 2910,
+        "accelerate": 11.4,
+        "year": 1980
+      },
+      {
+        "id": 342,
+        "mpg": "23.7",
+        "cylinders": 3,
+        "edispl": 70.0,
+        "horsepower": "100",
+        "weight": 2420,
+        "accelerate": 12.5,
+        "year": 1980
+      },
+      {
+        "id": 343,
+        "mpg": "35",
+        "cylinders": 4,
+        "edispl": 122.0,
+        "horsepower": "88",
+        "weight": 2500,
+        "accelerate": 15.1,
+        "year": 1980
+      },
+      {
+        "id": 344,
+        "mpg": "23.6",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "null",
+        "weight": 2905,
+        "accelerate": 14.3,
+        "year": 1980
+      },
+      {
+        "id": 345,
+        "mpg": "32.4",
+        "cylinders": 4,
+        "edispl": 107.0,
+        "horsepower": "72",
+        "weight": 2290,
+        "accelerate": 17.0,
+        "year": 1980
+      },
+      {
+        "id": 346,
+        "mpg": "27.2",
+        "cylinders": 4,
+        "edispl": 135.0,
+        "horsepower": "84",
+        "weight": 2490,
+        "accelerate": 15.7,
+        "year": 1981
+      },
+      {
+        "id": 347,
+        "mpg": "26.6",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "84",
+        "weight": 2635,
+        "accelerate": 16.4,
+        "year": 1981
+      },
+      {
+        "id": 348,
+        "mpg": "25.8",
+        "cylinders": 4,
+        "edispl": 156.0,
+        "horsepower": "92",
+        "weight": 2620,
+        "accelerate": 14.4,
+        "year": 1981
+      },
+      {
+        "id": 349,
+        "mpg": "23.5",
+        "cylinders": 6,
+        "edispl": 173.0,
+        "horsepower": "110",
+        "weight": 2725,
+        "accelerate": 12.6,
+        "year": 1981
+      },
+      {
+        "id": 350,
+        "mpg": "30",
+        "cylinders": 4,
+        "edispl": 135.0,
+        "horsepower": "84",
+        "weight": 2385,
+        "accelerate": 12.9,
+        "year": 1981
+      },
+      {
+        "id": 351,
+        "mpg": "39.1",
+        "cylinders": 4,
+        "edispl": 79.0,
+        "horsepower": "58",
+        "weight": 1755,
+        "accelerate": 16.9,
+        "year": 1981
+      },
+      {
+        "id": 352,
+        "mpg": "39",
+        "cylinders": 4,
+        "edispl": 86.0,
+        "horsepower": "64",
+        "weight": 1875,
+        "accelerate": 16.4,
+        "year": 1981
+      },
+      {
+        "id": 353,
+        "mpg": "35.1",
+        "cylinders": 4,
+        "edispl": 81.0,
+        "horsepower": "60",
+        "weight": 1760,
+        "accelerate": 16.1,
+        "year": 1981
+      },
+      {
+        "id": 354,
+        "mpg": "32.3",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "67",
+        "weight": 2065,
+        "accelerate": 17.8,
+        "year": 1981
+      },
+      {
+        "id": 355,
+        "mpg": "37",
+        "cylinders": 4,
+        "edispl": 85.0,
+        "horsepower": "65",
+        "weight": 1975,
+        "accelerate": 19.4,
+        "year": 1981
+      },
+      {
+        "id": 356,
+        "mpg": "37.7",
+        "cylinders": 4,
+        "edispl": 89.0,
+        "horsepower": "62",
+        "weight": 2050,
+        "accelerate": 17.3,
+        "year": 1981
+      },
+      {
+        "id": 357,
+        "mpg": "34.1",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "68",
+        "weight": 1985,
+        "accelerate": 16.0,
+        "year": 1981
+      },
+      {
+        "id": 358,
+        "mpg": "34.7",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "63",
+        "weight": 2215,
+        "accelerate": 14.9,
+        "year": 1981
+      },
+      {
+        "id": 359,
+        "mpg": "34.4",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "65",
+        "weight": 2045,
+        "accelerate": 16.2,
+        "year": 1981
+      },
+      {
+        "id": 360,
+        "mpg": "29.9",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "65",
+        "weight": 2380,
+        "accelerate": 20.7,
+        "year": 1981
+      },
+      {
+        "id": 361,
+        "mpg": "33",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "74",
+        "weight": 2190,
+        "accelerate": 14.2,
+        "year": 1981
+      },
+      {
+        "id": 362,
+        "mpg": "34.5",
+        "cylinders": 4,
+        "edispl": 100.0,
+        "horsepower": "null",
+        "weight": 2320,
+        "accelerate": 15.8,
+        "year": 1981
+      },
+      {
+        "id": 363,
+        "mpg": "33.7",
+        "cylinders": 4,
+        "edispl": 107.0,
+        "horsepower": "75",
+        "weight": 2210,
+        "accelerate": 14.4,
+        "year": 1981
+      },
+      {
+        "id": 364,
+        "mpg": "32.4",
+        "cylinders": 4,
+        "edispl": 108.0,
+        "horsepower": "75",
+        "weight": 2350,
+        "accelerate": 16.8,
+        "year": 1981
+      },
+      {
+        "id": 365,
+        "mpg": "32.9",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "100",
+        "weight": 2615,
+        "accelerate": 14.8,
+        "year": 1981
+      },
+      {
+        "id": 366,
+        "mpg": "31.6",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "74",
+        "weight": 2635,
+        "accelerate": 18.3,
+        "year": 1981
+      },
+      {
+        "id": 367,
+        "mpg": "28.1",
+        "cylinders": 4,
+        "edispl": 141.0,
+        "horsepower": "80",
+        "weight": 3230,
+        "accelerate": 20.4,
+        "year": 1981
+      },
+      {
+        "id": 368,
+        "mpg": "null",
+        "cylinders": 4,
+        "edispl": 121.0,
+        "horsepower": "110",
+        "weight": 2800,
+        "accelerate": 15.4,
+        "year": 1981
+      },
+      {
+        "id": 369,
+        "mpg": "30.7",
+        "cylinders": 6,
+        "edispl": 145.0,
+        "horsepower": "76",
+        "weight": 3160,
+        "accelerate": 19.6,
+        "year": 1981
+      },
+      {
+        "id": 370,
+        "mpg": "25.4",
+        "cylinders": 6,
+        "edispl": 168.0,
+        "horsepower": "116",
+        "weight": 2900,
+        "accelerate": 12.6,
+        "year": 1981
+      },
+      {
+        "id": 371,
+        "mpg": "24.2",
+        "cylinders": 6,
+        "edispl": 146.0,
+        "horsepower": "120",
+        "weight": 2930,
+        "accelerate": 13.8,
+        "year": 1981
+      },
+      {
+        "id": 372,
+        "mpg": "22.4",
+        "cylinders": 6,
+        "edispl": 231.0,
+        "horsepower": "110",
+        "weight": 3415,
+        "accelerate": 15.8,
+        "year": 1981
+      },
+      {
+        "id": 373,
+        "mpg": "26.6",
+        "cylinders": 8,
+        "edispl": 350.0,
+        "horsepower": "105",
+        "weight": 3725,
+        "accelerate": 19.0,
+        "year": 1981
+      },
+      {
+        "id": 374,
+        "mpg": "20.2",
+        "cylinders": 6,
+        "edispl": 200.0,
+        "horsepower": "88",
+        "weight": 3060,
+        "accelerate": 17.1,
+        "year": 1981
+      },
+      {
+        "id": 375,
+        "mpg": "17.6",
+        "cylinders": 6,
+        "edispl": 225.0,
+        "horsepower": "85",
+        "weight": 3465,
+        "accelerate": 16.6,
+        "year": 1981
+      },
+      {
+        "id": 376,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 112.0,
+        "horsepower": "88",
+        "weight": 2605,
+        "accelerate": 19.6,
+        "year": 1982
+      },
+      {
+        "id": 377,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 112.0,
+        "horsepower": "88",
+        "weight": 2640,
+        "accelerate": 18.6,
+        "year": 1982
+      },
+      {
+        "id": 378,
+        "mpg": "34",
+        "cylinders": 4,
+        "edispl": 112.0,
+        "horsepower": "88",
+        "weight": 2395,
+        "accelerate": 18.0,
+        "year": 1982
+      },
+      {
+        "id": 379,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 112.0,
+        "horsepower": "85",
+        "weight": 2575,
+        "accelerate": 16.2,
+        "year": 1982
+      },
+      {
+        "id": 380,
+        "mpg": "29",
+        "cylinders": 4,
+        "edispl": 135.0,
+        "horsepower": "84",
+        "weight": 2525,
+        "accelerate": 16.0,
+        "year": 1982
+      },
+      {
+        "id": 381,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 2735,
+        "accelerate": 18.0,
+        "year": 1982
+      },
+      {
+        "id": 382,
+        "mpg": "24",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "92",
+        "weight": 2865,
+        "accelerate": 16.4,
+        "year": 1982
+      },
+      {
+        "id": 383,
+        "mpg": "23",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "null",
+        "weight": 3035,
+        "accelerate": 20.5,
+        "year": 1982
+      },
+      {
+        "id": 384,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "74",
+        "weight": 1980,
+        "accelerate": 15.3,
+        "year": 1982
+      },
+      {
+        "id": 385,
+        "mpg": "37",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "68",
+        "weight": 2025,
+        "accelerate": 18.2,
+        "year": 1982
+      },
+      {
+        "id": 386,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "68",
+        "weight": 1970,
+        "accelerate": 17.6,
+        "year": 1982
+      },
+      {
+        "id": 387,
+        "mpg": "38",
+        "cylinders": 4,
+        "edispl": 105.0,
+        "horsepower": "63",
+        "weight": 2125,
+        "accelerate": 14.7,
+        "year": 1982
+      },
+      {
+        "id": 388,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 98.0,
+        "horsepower": "70",
+        "weight": 2125,
+        "accelerate": 17.3,
+        "year": 1982
+      },
+      {
+        "id": 389,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "88",
+        "weight": 2160,
+        "accelerate": 14.5,
+        "year": 1982
+      },
+      {
+        "id": 390,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 107.0,
+        "horsepower": "75",
+        "weight": 2205,
+        "accelerate": 14.5,
+        "year": 1982
+      },
+      {
+        "id": 391,
+        "mpg": "34",
+        "cylinders": 4,
+        "edispl": 108.0,
+        "horsepower": "70",
+        "weight": 2245,
+        "accelerate": 16.9,
+        "year": 1982
+      },
+      {
+        "id": 392,
+        "mpg": "38",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "67",
+        "weight": 1965,
+        "accelerate": 15.0,
+        "year": 1982
+      },
+      {
+        "id": 393,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "67",
+        "weight": 1965,
+        "accelerate": 15.7,
+        "year": 1982
+      },
+      {
+        "id": 394,
+        "mpg": "38",
+        "cylinders": 4,
+        "edispl": 91.0,
+        "horsepower": "67",
+        "weight": 1995,
+        "accelerate": 16.2,
+        "year": 1982
+      },
+      {
+        "id": 395,
+        "mpg": "25",
+        "cylinders": 6,
+        "edispl": 181.0,
+        "horsepower": "110",
+        "weight": 2945,
+        "accelerate": 16.4,
+        "year": 1982
+      },
+      {
+        "id": 396,
+        "mpg": "38",
+        "cylinders": 6,
+        "edispl": 262.0,
+        "horsepower": "85",
+        "weight": 3015,
+        "accelerate": 17.0,
+        "year": 1982
+      },
+      {
+        "id": 397,
+        "mpg": "26",
+        "cylinders": 4,
+        "edispl": 156.0,
+        "horsepower": "92",
+        "weight": 2585,
+        "accelerate": 14.5,
+        "year": 1982
+      },
+      {
+        "id": 398,
+        "mpg": "22",
+        "cylinders": 6,
+        "edispl": 232.0,
+        "horsepower": "112",
+        "weight": 2835,
+        "accelerate": 14.7,
+        "year": 1982
+      },
+      {
+        "id": 399,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 144.0,
+        "horsepower": "96",
+        "weight": 2665,
+        "accelerate": 13.9,
+        "year": 1982
+      },
+      {
+        "id": 400,
+        "mpg": "36",
+        "cylinders": 4,
+        "edispl": 135.0,
+        "horsepower": "84",
+        "weight": 2370,
+        "accelerate": 13.0,
+        "year": 1982
+      },
+      {
+        "id": 401,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 151.0,
+        "horsepower": "90",
+        "weight": 2950,
+        "accelerate": 17.3,
+        "year": 1982
+      },
+      {
+        "id": 402,
+        "mpg": "27",
+        "cylinders": 4,
+        "edispl": 140.0,
+        "horsepower": "86",
+        "weight": 2790,
+        "accelerate": 15.6,
+        "year": 1982
+      },
+      {
+        "id": 403,
+        "mpg": "44",
+        "cylinders": 4,
+        "edispl": 97.0,
+        "horsepower": "52",
+        "weight": 2130,
+        "accelerate": 24.6,
+        "year": 1982
+      },
+      {
+        "id": 404,
+        "mpg": "32",
+        "cylinders": 4,
+        "edispl": 135.0,
+        "horsepower": "84",
+        "weight": 2295,
+        "accelerate": 11.6,
+        "year": 1982
+      },
+      {
+        "id": 405,
+        "mpg": "28",
+        "cylinders": 4,
+        "edispl": 120.0,
+        "horsepower": "79",
+        "weight": 2625,
+        "accelerate": 18.6,
+        "year": 1982
+      },
+      {
+        "id": 406,
+        "mpg": "31",
+        "cylinders": 4,
+        "edispl": 119.0,
+        "horsepower": "82",
+        "weight": 2720,
+        "accelerate": 19.4,
+        "year": 1982
+      }
+    ]
+  }
+}
