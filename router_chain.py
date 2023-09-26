@@ -1,5 +1,7 @@
 import os
 import random
+from typing import Any, Dict, List, Optional
+from uuid import UUID
 from langchain.chains.router import MultiPromptChain, MultiRouteChain
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
@@ -10,9 +12,12 @@ from langchain.chains.router.llm_router import LLMRouterChain, RouterOutputParse
 from langchain.chains.router.multi_prompt_prompt import MULTI_PROMPT_ROUTER_TEMPLATE
 
 from langchain.agents import create_pandas_dataframe_agent
+from langchain.schema.agent import AgentAction, AgentFinish
 import pandas as pd
 from langchain.agents.agent_types import AgentType
 from langchain.chains import SimpleSequentialChain
+import langchain.callbacks
+from langchain.callbacks.base import BaseCallbackHandler, BaseCallbackManager
 
 
 class Config(): 
@@ -47,6 +52,16 @@ class PromptFactory():
     ]
 
 
+class MyCustomHandler(BaseCallbackHandler):
+    # def on_llm_new_token(self, token: str, **kwargs) -> None:
+    #     print(f"My custom handler, token: {token}")
+
+    # def on_chain_start(self, serialized: Dict[str, Any], inputs: Dict[str, Any], *, run_id: UUID, parent_run_id: UUID | None = None, tags: List[str] | None = None, metadata: Dict[str, Any] | None = None, **kwargs: Any) -> Any:
+    #     print("GODDAMNG", inputs, "*****")
+
+    def on_agent_finish(self, finish: AgentFinish, *, run_id: UUID, parent_run_id: UUID | None = None, **kwargs: Any) -> Any:
+        print(f"!!!!!!!!! My custom handler, agent finished: {finish} !!!!!")
+
 
 def generate_destination_chains(df):
     """
@@ -64,16 +79,19 @@ def generate_destination_chains(df):
         if name == "Plot agent":
             plotname = "agents_plots/" + str(random.randint(0, 999)) + ".png"
             # suffix = " Save the chart to " + "'" + plotname +"'." + ". Please use Action: python_repl_ast."
-            prefix = "Please use Action: python_repl_ast. If asked for a plot or chart, save it to " + "'" + plotname +"'.\n"
+            prefix = "Please use Action: python_repl_ast. Save the resulting plot to " + "'" + plotname +"' and don't plt.show() it.\n"
         else:
             prefix = "Please use Action: python_repl_ast.\n"
 
-        # agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, prefix=prefix) 
-        agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, max_iterations=10, prefix=prefix)
+        agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
+                                              agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+                                              max_iterations=10, 
+                                              prefix=prefix,
+                                              callback_manager=BaseCallbackManager([MyCustomHandler()]))
         destination_chains[name] = agent
 
     # default_chain = ConversationChain(llm=cfg.llm, output_key="text")
-    default_agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, prefix="Please use Action: python_repl_ast.\n")
+    default_agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, max_iterations=10, prefix="Please use Action: python_repl_ast.\n")
     return prompt_factory.prompt_infos, destination_chains, default_agent
 
 
@@ -98,7 +116,6 @@ def generate_router_chain(prompt_infos, destination_chains, default_chain):
         verbose=True,
         callbacks=[]
     )
-    
 
 
 if __name__ == "__main__":
