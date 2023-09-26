@@ -82,7 +82,7 @@ def generate_destination_chains(df):
                                       agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
                                       max_iterations=10, 
                                       prefix=prefix,
-                                      callback_manager=BaseCallbackManager([PlotAgentCallback()]))s
+                                      callback_manager=BaseCallbackManager([PlotAgentCallback()]))
         else:
             prefix = "Please use Action: python_repl_ast.\n"
             agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
