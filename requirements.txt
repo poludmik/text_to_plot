@@ -3,3 +3,4 @@ pandasai
 seaborn
 matplotlib
 pandas
+tabulate

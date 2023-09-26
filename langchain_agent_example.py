@@ -14,10 +14,13 @@ df = pd.DataFrame({
     "happiness_index": [2, 1, 8, 3, 4, 4, 9, 10, 5, 30]
 })
 
-llm = ChatOpenAI(temperature=0.0, model="gpt-4")
-print(llm.model_name)
+print(df)
+
+llm = ChatOpenAI(temperature=0.0, model='gpt-3.5-turbo-0613')
 
 agent = create_pandas_dataframe_agent(llm, df, verbose=True) 
+
+
 
 # print(agent("What is the shape of the dataset?"))
 print(agent("Take all countires with happiness index more than 9 and output sum of their gdps. Take a square root of this sum."))
