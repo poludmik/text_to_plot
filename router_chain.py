@@ -52,15 +52,13 @@ class PromptFactory():
     ]
 
 
-class MyCustomHandler(BaseCallbackHandler):
-    # def on_llm_new_token(self, token: str, **kwargs) -> None:
-    #     print(f"My custom handler, token: {token}")
-
-    # def on_chain_start(self, serialized: Dict[str, Any], inputs: Dict[str, Any], *, run_id: UUID, parent_run_id: UUID | None = None, tags: List[str] | None = None, metadata: Dict[str, Any] | None = None, **kwargs: Any) -> Any:
-    #     print("GODDAMNG", inputs, "*****")
-
+class PlotAgentCallback(BaseCallbackHandler):
     def on_agent_finish(self, finish: AgentFinish, *, run_id: UUID, parent_run_id: UUID | None = None, **kwargs: Any) -> Any:
-        print(f"!!!!!!!!! My custom handler, agent finished: {finish} !!!!!")
+        print(f"!!!!!!!!! Plot agent callback, agent finished: {finish} !!!!!")
+
+class QuestionAgentCallback(BaseCallbackHandler):
+    def on_agent_finish(self, finish: AgentFinish, *, run_id: UUID, parent_run_id: UUID | None = None, **kwargs: Any) -> Any:
+        print(f"!!!!!!!!! Question agent callback, agent finished: {finish} !!!!!")
 
 
 def generate_destination_chains(df):
@@ -80,14 +78,19 @@ def generate_destination_chains(df):
             plotname = "agents_plots/" + str(random.randint(0, 999)) + ".png"
             # suffix = " Save the chart to " + "'" + plotname +"'." + ". Please use Action: python_repl_ast."
             prefix = "Please use Action: python_repl_ast. Save the resulting plot to " + "'" + plotname +"' and don't plt.show() it.\n"
+            agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
+                                      agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+                                      max_iterations=10, 
+                                      prefix=prefix,
+                                      callback_manager=BaseCallbackManager([PlotAgentCallback()]))s
         else:
             prefix = "Please use Action: python_repl_ast.\n"
+            agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
+                                      agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+                                      max_iterations=10, 
+                                      prefix=prefix,
+                                      callback_manager=BaseCallbackManager([QuestionAgentCallback()]))
 
-        agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
-                                              agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
-                                              max_iterations=10, 
-                                              prefix=prefix,
-                                              callback_manager=BaseCallbackManager([MyCustomHandler()]))
         destination_chains[name] = agent
 
     # default_chain = ConversationChain(llm=cfg.llm, output_key="text")
