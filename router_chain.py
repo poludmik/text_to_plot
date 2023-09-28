@@ -1,6 +1,5 @@
 import os
 import random
-from typing import Any, Dict, List, Mapping, Optional
 from uuid import UUID
 from langchain.chains.router import MultiPromptChain, MultiRouteChain
 from langchain.chat_models import ChatOpenAI
@@ -19,21 +18,15 @@ from langchain.chains import SimpleSequentialChain
 import langchain.callbacks
 from langchain.callbacks.base import BaseCallbackHandler, BaseCallbackManager
 
-from langchain.agents.agent_toolkits.pandas.base import _get_prompt_and_tools
-
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from langchain.agents.agent_toolkits.pandas.base import _get_prompt_and_tools, _get_functions_prompt_and_tools
+from typing import Any, Dict, List, Optional, Sequence, Mapping
 
 from langchain.agents.agent import AgentExecutor, BaseSingleActionAgent
 from langchain.agents.mrkl.base import ZeroShotAgent
 from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
 from langchain.agents.types import AgentType
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.chains.llm import LLMChain
-from langchain.schema import BasePromptTemplate
 from langchain.schema.language_model import BaseLanguageModel
-from langchain.schema.messages import SystemMessage
 from langchain.tools import BaseTool
-from langchain.tools.python.tool import PythonAstREPLTool
 
 class Config(): 
     model = 'gpt-3.5-turbo-0613'
@@ -69,7 +62,7 @@ class QuestionAgentCallback(BaseCallbackHandler):
     def on_agent_finish(self, finish: AgentFinish, *, run_id: UUID, parent_run_id: UUID | None = None, **kwargs: Any) -> Any:
         print(f"!!!!!!!!! Question agent callback, agent finished: {finish} !!!!!")
 
-
+# Overwrite function to add a plotname to the prompt
 def create_pandas_dataframe_agent(
     llm: BaseLanguageModel,
     df: Any,
@@ -105,9 +98,9 @@ def create_pandas_dataframe_agent(
             prompt.template = prompt.template.replace("{input}", "{input}" + ". Save the resulting plot to " + "'" + plotname +"' and don't plt.show() it. Use Action: python_repl_ast.")
         else:
             prompt.template = prompt.template.replace("{input}", "{input}" + ". Use Action: python_repl_ast.")
-        print("START")
-        print(prompt.template)
-        print("END")
+        # print("START")
+        # print(prompt.template)
+        # print("END")
         tools = base_tools + list(extra_tools)
         llm_chain = LLMChain(
             llm=llm,
@@ -118,6 +111,23 @@ def create_pandas_dataframe_agent(
         agent = ZeroShotAgent(
             llm_chain=llm_chain,
             allowed_tools=tool_names,
+            callback_manager=callback_manager,
+            **kwargs,
+        )
+    elif agent_type == AgentType.OPENAI_FUNCTIONS:
+        _prompt, base_tools = _get_functions_prompt_and_tools(
+            df,
+            prefix=prefix,
+            suffix=suffix,
+            input_variables=input_variables,
+            include_df_in_prompt=include_df_in_prompt,
+            number_of_head_rows=number_of_head_rows,
+        )
+        tools = base_tools + list(extra_tools)
+        agent = OpenAIFunctionsAgent(
+            llm=llm,
+            prompt=_prompt,
+            tools=tools,
             callback_manager=callback_manager,
             **kwargs,
         )
@@ -141,43 +151,30 @@ def generate_destination_chains(df):
     """
     prompt_factory = PromptFactory()
     destination_chains = {}
+    plotname = "agents_plots/" + str(random.randint(0, 999)) + ".png"
 
     for p_info in prompt_factory.prompt_infos:
         name = p_info['name']
-        prompt_template = p_info['prompt_template']
-        # chain = LLMChain(
-        #     llm=cfg.llm, 
-        #     prompt=PromptTemplate(template=prompt_template, input_variables=['input']))
-        if name == "Plot agent":
-            plotname = "agents_plots/" + str(random.randint(0, 999)) + ".png"
-            # suffix = " Save the chart to " + "'" + plotname +"'." + ". Please use Action: python_repl_ast."
-            # prefix = "Please use Action: python_repl_ast. Save the resulting plot to " + "'" + plotname +"' and don't plt.show() it.\n"
-            prefix = "You are working with a pandas dataframe in Python. The name of the dataframe is `df`. The user will ask for a chart. " + \
-                        "Save the resulting plot to " + "'" + plotname +"' and don't plt.show() it. "+\
-                        "Use Action: 'python_repl_ast' from the tools below to answer the question posed to you:"
-            agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True,
-                                    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
-                                    max_iterations=10,
-                                    #   prefix=prefix,
-                                    prompt=PromptTemplate(template=prompt_template, input_variables=[]),
-                                    callback_manager=BaseCallbackManager([PlotAgentCallback()]),
-                                    plotname=plotname)
 
+        if name == "Plot agent":
+            plotname = plotname
+            callback = PlotAgentCallback()
         else:
-            prefix =  """
-                        You are working with a pandas dataframe in Python. The name of the dataframe is `df`.
-                        Use Action: 'python_repl_ast' from the tools below to answer the question posed to you:
-                        """
-            agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, 
-                                    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
-                                    max_iterations=10, 
-                                    prefix=prefix,
-                                    callback_manager=BaseCallbackManager([QuestionAgentCallback()]))
+            plotname = None
+            callback = QuestionAgentCallback()
+            
+        agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True,
+                        agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+                        max_iterations=10,
+                        #   prefix=prefix,
+                        callback_manager=BaseCallbackManager([callback]),
+                        plotname=plotname,
+                        )
 
         destination_chains[name] = agent
 
     # default_chain = ConversationChain(llm=cfg.llm, output_key="text")
-    default_agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, max_iterations=10, prefix="Please use Action: python_repl_ast.\n")
+    default_agent = create_pandas_dataframe_agent(cfg.llm, df, verbose=True, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, max_iterations=10)
     return prompt_factory.prompt_infos, destination_chains, default_agent
 
 
@@ -234,9 +231,17 @@ if __name__ == "__main__":
     prompt_infos, destination_chains, default_chain = generate_destination_chains(df)
     chain = generate_router_chain(prompt_infos, destination_chains, default_chain)
 
-    question = "Pie plot a graph of three countries with lowest happiness_index. Show countries names. Make the pie plot 3D."
+    question = "Pie plot a graph of three countries with lowest happiness_index. Make the pie plot 3D."
+    # question = "Pie plot me GDPs of UK and Italy, but multiply Italy's GDP by 2. Use red color for UK and blue for Italy. Title the figure 'kek' and add legend. "
     # question = "Plot all countries gdps."
     # question = "How many rows are there?"
 
-    result = chain(question)
+    try:
+          result = chain(question)
+    except Exception as e:
+             print("EXCEPTION")
+             result = str(e)
+             if not result.startswith("Could not parse LLM output: `"):
+                 raise e
+             result = result.removeprefix("Could not parse LLM output: `").removesuffix("`")
     print(result)
