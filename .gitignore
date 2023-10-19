@@ -7,3 +7,5 @@ ncNet/utilities/__pycache__/
 ncNet/model/__pycache__/
 ncNet/myenv/
 agents_plots/plot.png
+bambooai_consolidated_log.json
+bambooai_run_log.json
