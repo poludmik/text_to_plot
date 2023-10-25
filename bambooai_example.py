@@ -7,7 +7,7 @@ df = pd.read_csv('data/country_happiness_gdp.csv')
 
 # exploratory=False automatically means Data Analyst DF agent
 
-bamboo = BambooAI(df, debug=False, vector_db=False, exploratory=False, llm_switch_plan=False, llm_switch_code=True, search_tool=False)
-bamboo.pd_agent_converse("Find top 7 least happy countries and barplot double of their gdps. Use red color for italy. Save the plot to 'agents_plots/bamboo_pie.png'. Don't use plt.show().")
+# bamboo = BambooAI(df, debug=False, vector_db=False, exploratory=False, llm_switch_plan=False, llm_switch_code=True, search_tool=False)
+bamboo = BambooAI(df, debug=False, vector_db=False, exploratory=True, llm_switch_plan=False, search_tool=False, local_code_model='CodeLlama-7B-Python-fp16')
 
-
+bamboo.pd_agent_converse("Find top 7 least happy countries.")

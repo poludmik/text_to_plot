@@ -4,3 +4,10 @@ seaborn
 matplotlib
 pandas
 tabulate
+PyMuPDF
+
+camelot-py[base]
+# opencv-python
+# PyPDF2==2.12.1
+
+tabula-py
